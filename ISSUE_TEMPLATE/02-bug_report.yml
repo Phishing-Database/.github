@@ -6,7 +6,7 @@ labels:
 assignees:
   - mitchellkrogza
   - funilrys
-projects: ["Phishing-Database/projects/2"]
+projects: ["Phishing-Database/2"]
 
 body:
   - type: textarea
