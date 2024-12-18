@@ -1,13 +1,13 @@
 ## Phishing Database Project
 
-The Phishing database project aim's to provide up-to-date list of domains and URI there is hosting phishing contents.
+The Phishing database project aim is to provide an up-to-date list of domains and URIs that are hosting phishing contents.
 
 The project is maintained by our [team](https://github.com/orgs/Phishing-Database/teams) of users, who like you, are using their spare time to help keeping this project alive, so please accept and respect, there might be a delay in any handling and responses. 
 
 
 ### 🔗 Download the Full List of Data
 
-In the following table, you'll find links to our datasets and it's checksum.
+In the following table, you'll find links to our datasets and its checksum.
 
 To avoid misunderstandings, then the dataset are hosted from `phish.co.za`, while the checksum-file are hosted at GitHub (`raw.githubusercontent.com`)
 
