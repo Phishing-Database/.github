@@ -1,8 +1,8 @@
 ## Phishing Database Project
 
-The Phishing database project aim's to provide up-to-date list of domains and URI that provides phishing contents.
+The Phishing database project aim's to provide up-to-date list of domains and URI there is hosting phishing contents.
 
-This project is maintained by our users, like you, in their spare time, so please accept, there might be a delay in any handling 
+The project is maintained by our [team](https://github.com/orgs/Phishing-Database/teams) of users, who like you, are using their spare time to help keeping this project alive, so please accept and respect, there might be a delay in any handling and responses. 
 
 
 ### 🔗 Download the Full List of Data
@@ -30,15 +30,30 @@ To avoid misunderstandings, then the dataset are hosted from `phish.co.za`, whil
 
 ## Questions
 
-If you have any questions, please use the Discussions in https://github.com/Phishing-Database/dev-center/discussions
+If you have any questions, please use [Dev-Center Discussions][DCD]
 
 ## Reporting and Contributing
 
-Reporting False Positives should be done to https://github.com/Phishing-Database/phishing/issues/new?labels=False+Positive&projects=&template=02-falsepositive.yml&title=
+Reporting False Positives should be done by this issue link [PFP]
 
-Reporting new phishing records should be done to https://github.com/mitchellkrogza/Phishing-Database/phishing/issues/new?assignees=&labels=&projects=&template=01-phishing.yml&title=
+Reporting new phishing records should be done by this issue link [RPR]
 
 > [!tip]
-> We encourage you to also add new domain and IP addresses to [My Privacy DNS](https://github.com/mypdns/matrix) as they do their best to keep records of why and when a domain was added to any blacklist
+> We encourage you to also add new domain and IP addresses to [My Privacy DNS](https://github.com/mypdns/matrix) as they do their best to keep and track records of why and when a domain was added to any blacklist
 
-All other idea's, development suggestion, feature request and bugs goes to https://github.com/Phishing-Database/dev-center/issues/new/choose
+All other idea's, development suggestion, feature request and bugs goes to the [dev-center][DCIC] 
+
+
+[//]: # (Links)
+
+[//]: # (PFP = Phishing False Report)
+[PFP]: https://github.com/Phishing-Database/phishing/issues/new?labels=False+Positive&projects=&template=02-falsepositive.yml&title= "report a false positive"
+
+[//]: # (RPR = Report Phshing Record)
+[RPR]: https://github.com/mitchellkrogza/Phishing-Database/phishing/issues/new?assignees=&labels=&projects=&template=01-phishing.yml&title= "Report Phshing Record"
+
+[//]: # (DCIC = Dev-Center Discussions)
+[DCD]: https://github.com/Phishing-Database/dev-center/discussions
+
+[//]: # (DCIC = Dev-Center Issue Choose)
+[DCIC]: https://github.com/Phishing-Database/dev-center/issues/new/choose
