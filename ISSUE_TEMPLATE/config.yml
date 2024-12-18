@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report url or domain to Phishing-Database/Phishing
+    url: https://github.com/Phishing-Database/Phishing/issues/new/choose
+    about: To manually submit new phishing, please report to https://github.com/Phishing-Database/phishing
+  - name: Question
+    url: https://github.com/Phishing-Database/dev-center/discussions
+    about: If you have a question or need help, please use our Discussions
