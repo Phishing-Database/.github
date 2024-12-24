@@ -1,16 +1,18 @@
-## Hi there 👋
+<h1 align="center">
+    Hi there, you found the Phishing.Database Project! 🎣<img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
+</h1>
 
-!WIP
+<img src="https://github.com/Phishing-Database/assets/raw/master/phishing-logo.jpg" alt="Phishing Domain Status Testing Repo"/>
 
-More will come, when finished https://github.com/Phishing-Database/dev-center/issues/2
 
-<!--
+The **Phishing.Database** project is a comprehensive and regularly updated repository designed to help the community identify and mitigate phishing threats.
 
-**Here are some ideas to get you started:**
+We believe that threat intelligence on phishing, malware, and ransomware should always remain **free and open-source**. By openly sharing data about criminal activities, we aim to protect the internet users, help organizations mitigate threats, and contribute to a safer online environment for everyone by contributing to the global effort to identify and shutdown malicious sites. Unlike proprietary systems that sell access to phishing data, we focus and on transparency and collaboration for the greater good.
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+Join us in our mission to keep threat intelligence free and open-source by contributing to the project, sharing the data, and supporting the maintainers.
+
+## Sponsors
+
+We're seeking sponsors to help us grow and strengthen our infrastructure. By sponsoring this project, you'll have the opportunity to showcase your logo and link here, gaining visibility and supporting an open-source initiative that benefits the community.
+
+Contact us via 📧 to explore partnership opportunities.
