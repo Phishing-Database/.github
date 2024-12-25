@@ -52,13 +52,7 @@ body:
         * `https://sub.example.com/page`
         * **NSFW** `example.com`
         * `192.168.0.0/16`
-      value: |
-        * `example.com`
-        * `sub.example.com`
-        * `https://example.com/page`
-        * `https://sub.example.com/page`
-        * **NSFW** `example.com`
-        * `192.168.0.0/16`
+      render: Text
     validations:
       required: true
 
@@ -73,11 +67,7 @@ body:
         * `sub.example.org`
         * `https://example.org/page`
         * `https://sub.example.org/page`
-      value: |
-        * `example.org`
-        * `sub.example.org`
-        * `https://example.org/page`
-        * `https://sub.example.org/page`
+      render: Text
     validations:
       required: true
 
@@ -87,9 +77,6 @@ body:
       label: Where or how did you discover this phishing?
       description: Please provide any information that may help us understand how you discovered or how you were targeted by this phishing.
       placeholder: |
-        I discovered this phishing by...
-        I was targeted by this phishing by...
-      value: |
         I discovered this phishing by...
         I was targeted by this phishing by...
     validations:
@@ -125,8 +112,6 @@ body:
         One link per line.
       placeholder: |
         * https://sub.example.co.uk/page
-      value: |
-        * https://sub.example.co.uk/page
     validations:
       required: false
 
@@ -136,8 +121,6 @@ body:
       label: Additional Information or Context
       description: Is there anything else you'd like to add?
       placeholder: |
-        I have also noticed that...
-      value: |
         I have also noticed that...
     validations:
       required: false
