@@ -42,16 +42,14 @@ body:
           - **Please prefix any subjects with backticks (`) to prevent them from becoming clickable.**
           - Please do NOT provide any personal information, such as your own IP address or email address.
           - Please warn with "NSFW" where applicable.
-          - If you are submitting an IP address, please also provide the CIDR notation (e.g. `/32`) - if applicable.
-
-        Please warn with "NSFW" where applicable.
+          - If you are submitting an IP address, please also provide the CIDR notation (e.g. `/32`) - when applicable.
       placeholder: |
-        * `example.com`
-        * `sub.example.com`
-        * `https://example.com/page`
-        * `https://sub.example.com/page`
-        * **NSFW** `example.com`
-        * `192.168.0.0/16`
+        example.com
+        sub.example.com
+        https://example.com/page
+        https://sub.example.com/page
+        **NSFW** example.com
+        192.168.0.0/16
       render: Text
     validations:
       required: true
@@ -63,10 +61,10 @@ body:
       description: |
         Please list any domains that you believe are being impersonated by the phishing subjects.
       placeholder: |
-        * `example.org`
-        * `sub.example.org`
-        * `https://example.org/page`
-        * `https://sub.example.org/page`
+        example.org
+        sub.example.org
+        https://example.org/page
+        https://sub.example.org/page
       render: Text
     validations:
       required: true
@@ -91,16 +89,13 @@ body:
 
         Please note that there need to be at least one blank line separating before and after the image line.
         To add an image, use the following code: `![Screenshot of phishing](https://example.com/path/to/image.png)`
-      placeholder: |
-        <details><summary>Screenshot</summary>
-
-
-        </details>
       value: |
         <details><summary>Screenshot</summary>
+
+
         </details>
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: related-external-source
