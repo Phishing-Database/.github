@@ -39,29 +39,22 @@ body:
 
         Please warn with "NSFW" where applicable.
       placeholder: |
-        * example.com
-        * sub.example.com
-        * https://example.com/page
-        * https://sub.example.com/page
-        * **NSFW** example.com
-        * 192.168.0.0/16
-      value: |
-        * example.com
-        * sub.example.com
-        * https://example.com/page
-        * https://sub.example.com/page
-        * **NSFW** example.com
-        * 192.168.0.0/16
+        example.com
+        sub.example.com
+        https://example.com/page
+        https://sub.example.com/page
+        **NSFW** example.com
+        192.168.0.0/16
+      render: Text
     validations:
       required: true
+
   - type: textarea
     id: false-positive
     attributes:
       label: Why do you believe this is a false-positive?
       description: Please explain why you believe this is a false-positive.
       placeholder: |
-        I believe this is a false-positive because...
-      value: |
         I believe this is a false-positive because...
     validations:
       required: true
@@ -87,8 +80,6 @@ body:
       description: Please provide any information that may help us understand how you discovered this false-positive(s).
       placeholder: |
         I discovered this false-positive by...
-      value: |
-        I discovered this false-positive by...
     validations:
       required: true
 
@@ -100,8 +91,6 @@ body:
         Please include any relevant links to your existing removal or whitelisting requests.
       placeholder: |
         I have requested a review from...
-      value: |
-        I have requested a review from...
     validations:
       required: false
 
@@ -112,26 +101,24 @@ body:
       description: |
         If applicable to the problem, please provide some screenshots to help explain the problem.
 
-        Please note that there need to be at least one blank line separating before and after the image line.
+        Please note that there need to be at least one blank line, separating before and after the image line.
         To add an image, use the following code: `![Screenshot of False Positive](https://example.com/path/to/image.png)`
-      placeholder: |
-        <details><summary>Screenshot</summary>
 
-
-        </details>
+        If you do not apply a screenshot, please consider deleting the lines in this box.
       value: |
         <details><summary>Screenshot</summary>
+
+
         </details>
     validations:
       required: false
+
   - type: textarea
     id: more-info
     attributes:
       label: Additional Information or Context
       description: Is there anything else you'd like to add?
       placeholder: |
-        I have also noticed that...
-      value: |
         I have also noticed that...
     validations:
       required: false
