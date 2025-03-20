@@ -1,35 +1,40 @@
 name: False Positive Report
 description: Create a report to suggest a false positive.
-title: "example.com"
-labels:
-  - "false positive"
-  - "verification"
+title: "DOMAIN_ONLY"
+labels: [ "false positive", "verification" ]
+type: Task
 projects:
   - Phishing-Database/2
+
 body:
   - type: markdown
     attributes:
       value: |+
-        Thank you for reporting a false positive!
+        Thank you for reporting a false positive(*)!
 
-        We know this can be frustrating and confusing for webmasters, developers, and website owners. Please be patient; one of our team members will look into your issue as soon as possible. 
+        Please read this carefully. Cutting corners will delay the resolution of your issue!
+
+        We know this can be frustrating and confusing for webmasters, developers, and website owners. Please be patient; one of our team members will look into your issue as soon as possible.
 
         To help us understand the problem, please provide clear and accurate information without unnecessary details. Keep your responses short and to the point. Our team knows what information they need, and they will ask for more if necessary.
-
+        
         ### Important Notes:
-        - **Title**: Please enter your domain name or IP only.
-        - **One Issue per Domain**: Only report one issue per domain. If you have multiple issues, please use the comments section to refer to them instead of repeating everything.
+        - **Title**: Please only enter your domain name or IP.
+        - **One Issue per Domain**: Only report one domain per issue. If you have multiple issues, please use the comments section to refer to them instead of repeating everything.
         - **Basic Information Only**: When filling in the text boxes, do not include protocols like `https`. This applies to:
-          - Domain
-          - URIs
-          - IP addresses and ranges (use CIDR notation, e.g., `192.0.2.0` or `192.0.2.0/24`)
+          - **Domain**
+          - **URIs**
+          - **IP** addresses and ranges (use CIDR notation, e.g., `192.0.2.0` or `192.0.2.0/24`)
         - **Comments**: Add any comments in the "Please explain why you believe this is a false positive" section only.
         - **Discovery**: "How did you discover this false positive?" is optional but appreciated.
-        - **Review Requests**: If you have asked for a review from other sources, just mention who it was, without a long explanation. We will ask for more details if needed.
+        - **Review Requests**: If you have asked for a review from other sources, just mention who it was, without a long explanation. We will ask for more details if needed. Please use the "Relevant links" to link to any resources
 
         If you have any questions or need assistance, please ask in our [Discussions](https://github.com/Phishing-Database/dev-center/discussions) section.
 
-        Thank you,  
+        \* What is a [false positive](https://kb.mypdns.org/articles/MTX-A-82) (Firefox only)
+
+        Thank you,
+        
         The Phishing Database Project Team.
 
   - type: textarea
@@ -38,8 +43,6 @@ body:
       label: What are the subjects of the false-positive domain
       description: |
         Please list the domains that you believe are false-positives.
-
-        Please warn with "NSFW" where applicable.
       placeholder: |
         example.com
       render: Text
@@ -53,14 +56,12 @@ body:
       label: What are the subjects of the false-positive URLs
       description: |
         Please list any URLs that you believe are false-positives.
-
-        Please warn with "NSFW" where applicable.
       placeholder: |
-        https://example.com/page
-        https://sub.example.com/page
+        example.com/page
+        sub.example.com/page
       render: Text
     validations:
-      required: true
+      required: false
 
 
   - type: textarea
@@ -69,23 +70,31 @@ body:
       label: What are the subjects of the false-positive IP
       description: |
         Please list IPs that you believe are false-positives.
-
-        Please warn with "NSFW" where applicable.
       placeholder: |
+        192.0.2.0
+        - or -
         192.0.2.0/24
       render: Text
     validations:
-      required: true
+      required: false
+
 
   - type: textarea
     id: info
     attributes:
       label: Why do you believe this is a false-positive?
-      description: Please explain why you believe this is a false-positive.
+      description: |
+        Please explain why you think this is a false positive.
+  
+        **Warning**
+        - Please label with "**NSFW**" where appropriate.
+        - Enclose any links and domains in backticks.
       placeholder: |
         I believe this is a false-positive because...
     validations:
       required: true
+
+
   - type: dropdown
     id: discovery
     attributes:
@@ -101,6 +110,7 @@ body:
     validations:
       required: true
 
+
   - type: textarea
     id: discovery_other
     attributes:
@@ -109,7 +119,7 @@ body:
       placeholder: |
         I discovered this false-positive by...
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: peer_sources_review
@@ -122,17 +132,30 @@ body:
     validations:
       required: false
 
+
+  - type: textarea
+    id: links
+    attributes:
+      label: Relevant links
+      description: |
+        Here, you can include any relevant links, such as requests for removal from third-party resources like PhisTank.
+      render: text
+    validations:
+      required: false
+
+
   - type: textarea
     id: screenshot
     attributes:
-      label: Do you have a screenshot?
+      label: Screenshot
       description: |
-        If applicable to the problem, please provide some screenshots to help explain the problem.
+        Do you have a screenshot?  
+        If relevant to the issue, please provide some screenshots to help clarify the problem.
 
-        Please note that there need to be at least one blank line, separating before and after the image line.
-        To add an image, use the following code: `![Screenshot of False Positive](https://example.com/path/to/image.png)`
+        Please ensure there is at least one blank line before and after the image line.  
+        To add an image, use the following format: `![Screenshot of False Positive](https://example.com/path/to/image.png)`
 
-        If you do not apply a screenshot, please consider deleting the lines in this box.
+        If you do not have a screenshot, please consider removing the lines in this section.
       value: |
         <details><summary>Screenshot</summary>
 
