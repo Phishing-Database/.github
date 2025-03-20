@@ -1,56 +1,84 @@
 name: False Positive Report
 description: Create a report to suggest a false positive.
-title: "False Positive | example.com"
+title: "example.com"
 labels:
   - "false positive"
-assignees:
-  - funilrys
-  - mitchellkrogza
-  - spirillen
-  - g0d33p3rsec
+  - "verification"
 projects:
   - Phishing-Database/2
 body:
   - type: markdown
     attributes:
       value: |+
-        Thanks for taking the time to fill out this false positive report!
+        Thank you for reporting a false positive!
 
-        We understand that this can be frustrating, confusing, embarrassing, time consuming, and even painful for many webmasters, developers, user and websites or services owners.
-        Please be patient and rest assured that we one of our team members will address your issue as soon as possible. Please be sure to provide as much information as possible to help us understand the issue.
+        We know this can be frustrating and confusing for webmasters, developers, and website owners. Please be patient; one of our team members will look into your issue as soon as possible. 
 
-        All issues are welcome, but please be aware that:
-          - We are a small team and may not be able to respond immediately.
-          - We may ask for more information to help us understand the issue.
-          - Your issue may be moved to one of our other repositories for further investigation.
+        To help us understand the problem, please provide clear and accurate information without unnecessary details. Keep your responses short and to the point. Our team knows what information they need, and they will ask for more if necessary.
 
-        We appreciate your help in making the Phishing Database better!
+        ### Important Notes:
+        - **Title**: Please enter your domain name or IP only.
+        - **One Issue per Domain**: Only report one issue per domain. If you have multiple issues, please use the comments section to refer to them instead of repeating everything.
+        - **Basic Information Only**: When filling in the text boxes, do not include protocols like `https`. This applies to:
+          - Domain
+          - URIs
+          - IP addresses and ranges (use CIDR notation, e.g., `192.0.2.0` or `192.0.2.0/24`)
+        - **Comments**: Add any comments in the "Please explain why you believe this is a false positive" section only.
+        - **Discovery**: "How did you discover this false positive?" is optional but appreciated.
+        - **Review Requests**: If you have asked for a review from other sources, just mention who it was, without a long explanation. We will ask for more details if needed.
 
-        If you have a question or need help, please ask in our [Discussions](https://github.com/Phishing-Database/dev-center/discussions) section.
+        If you have any questions or need assistance, please ask in our [Discussions](https://github.com/Phishing-Database/dev-center/discussions) section.
 
+        Thank you,  
         The Phishing Database Project Team.
 
   - type: textarea
-    id: target-subjects
+    id: subjects_domain
     attributes:
-      label: What are the subjects of the false-positive (domains, URLs, or IPs)?
+      label: What are the subjects of the false-positive domain
       description: |
-        Please list any domains, URLs or IPs that you believe are false-positives.
+        Please list the domains that you believe are false-positives.
 
         Please warn with "NSFW" where applicable.
       placeholder: |
         example.com
-        sub.example.com
+      render: Text
+    validations:
+      required: true
+
+
+  - type: textarea
+    id: subjects_uri
+    attributes:
+      label: What are the subjects of the false-positive URLs
+      description: |
+        Please list any URLs that you believe are false-positives.
+
+        Please warn with "NSFW" where applicable.
+      placeholder: |
         https://example.com/page
         https://sub.example.com/page
-        **NSFW** example.com
-        192.168.0.0/16
+      render: Text
+    validations:
+      required: true
+
+
+  - type: textarea
+    id: subjects_ip
+    attributes:
+      label: What are the subjects of the false-positive IP
+      description: |
+        Please list IPs that you believe are false-positives.
+
+        Please warn with "NSFW" where applicable.
+      placeholder: |
+        192.0.2.0/24
       render: Text
     validations:
       required: true
 
   - type: textarea
-    id: false-positive
+    id: info
     attributes:
       label: Why do you believe this is a false-positive?
       description: Please explain why you believe this is a false-positive.
@@ -74,7 +102,7 @@ body:
       required: true
 
   - type: textarea
-    id: discovery-other
+    id: discovery_other
     attributes:
       label: Where did you find this false-positive if not listed above?
       description: Please provide any information that may help us understand how you discovered this false-positive(s).
@@ -84,11 +112,11 @@ body:
       required: true
 
   - type: textarea
-    id: peer-sources-review
+    id: peer_sources_review
     attributes:
       label: Have you requested a review from other sources?
       description: |
-        Please include any relevant links to your existing removal or whitelisting requests.
+        Please only name who you have requested from.
       placeholder: |
         I have requested a review from...
     validations:
@@ -110,15 +138,5 @@ body:
 
 
         </details>
-    validations:
-      required: false
-
-  - type: textarea
-    id: more-info
-    attributes:
-      label: Additional Information or Context
-      description: Is there anything else you'd like to add?
-      placeholder: |
-        I have also noticed that...
     validations:
       required: false
