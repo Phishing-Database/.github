@@ -40,23 +40,15 @@ body:
           - **Please prefix any subjects with backticks (`) to prevent them from becoming clickable.**
           - Please do NOT provide any personal information, such as your own IP address or email address.
           - Please warn with "NSFW" where applicable.
-          - If you are submitting an IP address, please also provide the CIDR notation (e.g. `/32`) - if applicable.
-
-        Please warn with "NSFW" where applicable.
+          - If you are submitting an IP address, please also provide the CIDR notation (e.g. `/32`) - when applicable.
       placeholder: |
-        * `example.com`
-        * `sub.example.com`
-        * `https://example.com/page`
-        * `https://sub.example.com/page`
-        * **NSFW** `example.com`
-        * `192.168.0.0/16`
-      value: |
-        * `example.com`
-        * `sub.example.com`
-        * `https://example.com/page`
-        * `https://sub.example.com/page`
-        * **NSFW** `example.com`
-        * `192.168.0.0/16`
+        example.com
+        sub.example.com
+        https://example.com/page
+        https://sub.example.com/page
+        **NSFW** example.com
+        192.168.0.0/16
+      render: Text
     validations:
       required: true
 
@@ -67,15 +59,11 @@ body:
       description: |
         Please list any domains that you believe are being impersonated by the phishing subjects.
       placeholder: |
-        * `example.org`
-        * `sub.example.org`
-        * `https://example.org/page`
-        * `https://sub.example.org/page`
-      value: |
-        * `example.org`
-        * `sub.example.org`
-        * `https://example.org/page`
-        * `https://sub.example.org/page`
+        example.org
+        sub.example.org
+        https://example.org/page
+        https://sub.example.org/page
+      render: Text
     validations:
       required: true
 
@@ -85,9 +73,6 @@ body:
       label: Where or how did you discover this phishing?
       description: Please provide any information that may help us understand how you discovered or how you were targeted by this phishing.
       placeholder: |
-        I discovered this phishing by...
-        I was targeted by this phishing by...
-      value: |
         I discovered this phishing by...
         I was targeted by this phishing by...
     validations:
@@ -102,16 +87,13 @@ body:
 
         Please note that there need to be at least one blank line separating before and after the image line.
         To add an image, use the following code: `![Screenshot of phishing](https://example.com/path/to/image.png)`
-      placeholder: |
-        <details><summary>Screenshot</summary>
-
-
-        </details>
       value: |
         <details><summary>Screenshot</summary>
+
+
         </details>
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: related-external-source
@@ -123,8 +105,6 @@ body:
         One link per line.
       placeholder: |
         * https://sub.example.co.uk/page
-      value: |
-        * https://sub.example.co.uk/page
     validations:
       required: false
 
@@ -134,8 +114,6 @@ body:
       label: Additional Information or Context
       description: Is there anything else you'd like to add?
       placeholder: |
-        I have also noticed that...
-      value: |
         I have also noticed that...
     validations:
       required: false
