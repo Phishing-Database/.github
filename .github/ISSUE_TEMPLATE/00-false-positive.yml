@@ -12,22 +12,32 @@ body:
   - type: markdown
     attributes:
       value: |+
-        Thanks for taking the time to fill out this false positive report!
+        Thank you for reporting a potential false positive!
 
-        We understand that this can be frustrating, confusing, embarrassing, time consuming, and even painful for many webmasters, developers, user and websites or services owners.
-        Please be patient and rest assured that we one of our team members will address your issue as soon as possible. Please be sure to provide as much information as possible to help us understand the issue.
+        We understand this situation can be frustrating or inconvenient for webmasters, developers, and website owners. Please be patient — one of our team members will review your report as soon as possible. Providing detailed information will help us resolve the issue more quickly.
 
-        All issues are welcome, but please be aware that:
-          - We are a small team and may not be able to respond immediately.
-          - We may ask for more information to help us understand the issue.
-          - Your issue may be moved to one of our other repositories for further investigation.
+        Please note:
+          - We are a small team and may not respond immediately.
+          - We might request additional information to better understand your report.
+          - Your issue could be moved to another repository for further investigation.
 
-        We appreciate your help in making the Phishing Database better!
+        Your feedback helps us improve the Phishing Database.
 
-        If you have a question or need help, please ask in our [Discussions](https://github.com/Phishing-Database/dev-center/discussions) section.
+        If you have questions or need assistance, please visit our [Discussions](https://github.com/Phishing-Database/dev-center/discussions) section.
 
-        The Phishing Database Project Team.
+        — The Phishing Database Project Team
 
+        ---
+        ### Important Notes
+
+        - **Title**: Only enter the main domain name or IP address you are reporting. Do not include extra information.
+        - **One Report per Domain**: Please create one report for each main domain or IP address. You can include subdomains of the same domain in the same report. If you have unrelated domains or IPs, create separate reports for each.
+        - **No Protocols**: When filling in the text boxes, do **not** include `http://` or `https://`. Just write the domain, subdomain, or IP address (for example: `example.com`, `sub.example.com`, or `192.0.2.0/24`).
+        - **Comments**: Add any explanations or extra details only in the section called “Why do you believe this is a false positive?”
+        - **Discovery**: Telling us how you found this false positive is optional, but it helps us.
+        - **Review Requests**: If you have already asked other organizations or services to review or remove the false positive, just mention their names. You can add links in the “Relevant links” section if needed.
+
+        Following these guidelines will help us review your report faster
   - type: textarea
     id: target-subjects
     attributes:
@@ -43,13 +53,6 @@ body:
         * https://sub.example.com/page
         * **NSFW** example.com
         * 192.168.0.0/16
-      value: |
-        * example.com
-        * sub.example.com
-        * https://example.com/page
-        * https://sub.example.com/page
-        * **NSFW** example.com
-        * 192.168.0.0/16
     validations:
       required: true
   - type: textarea
@@ -58,8 +61,6 @@ body:
       label: Why do you believe this is a false-positive?
       description: Please explain why you believe this is a false-positive.
       placeholder: |
-        I believe this is a false-positive because...
-      value: |
         I believe this is a false-positive because...
     validations:
       required: true
@@ -85,8 +86,6 @@ body:
       description: Please provide any information that may help us understand how you discovered this false-positive(s).
       placeholder: |
         I discovered this false-positive by...
-      value: |
-        I discovered this false-positive by...
     validations:
       required: true
 
@@ -97,8 +96,6 @@ body:
       description: |
         Please include any relevant links to your existing removal or whitelisting requests.
       placeholder: |
-        I have requested a review from...
-      value: |
         I have requested a review from...
     validations:
       required: false
@@ -119,6 +116,8 @@ body:
         </details>
       value: |
         <details><summary>Screenshot</summary>
+
+
         </details>
     validations:
       required: false
@@ -128,8 +127,6 @@ body:
       label: Additional Information or Context
       description: Is there anything else you'd like to add?
       placeholder: |
-        I have also noticed that...
-      value: |
         I have also noticed that...
     validations:
       required: false

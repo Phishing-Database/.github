@@ -12,21 +12,20 @@ body:
   - type: markdown
     attributes:
       value: |+
-        Thanks for taking the time to fill out this false positive report!
+        Thank you for submitting a phishing report.
 
-        We understand that this can be frustrating, confusing, embarrassing, time consuming, and even painful for many webmasters, developers, user and websites or services owners.
-        Please be patient and rest assured that we one of our team members will address your issue as soon as possible. Please be sure to provide as much information as possible to help us understand the issue.
+        We understand that dealing with phishing can be stressful and disruptive for webmasters, developers, and service owners. Please be patient — one of our team members will review your report as soon as possible. Providing detailed information will help us investigate and resolve the issue more efficiently.
 
-        All issues are welcome, but please be aware that:
-          - We are a small team and may not be able to respond immediately.
-          - We may ask for more information to help us understand the issue.
-          - Your issue may be moved to one of our other repositories for further investigation.
+        Please note:
+          - We are a small team and may not respond immediately.
+          - We may request additional information to better understand your report.
+          - Your issue may be moved to another repository for further investigation.
 
-        We appreciate your help in making the Phishing Database better!
+        Your reports help us improve the Phishing Database.
 
-        If you have a question or need help, please ask in our [Discussions](https://github.com/Phishing-Database/dev-center/discussions) section.
+        If you have questions or need assistance, please visit our [Discussions](https://github.com/Phishing-Database/dev-center/discussions) section.
 
-        The Phishing Database Project Team.
+        — The Phishing Database Project Team
 
   - type: textarea
     id: target-subjects
@@ -50,13 +49,6 @@ body:
         * `https://sub.example.com/page`
         * **NSFW** `example.com`
         * `192.168.0.0/16`
-      value: |
-        * `example.com`
-        * `sub.example.com`
-        * `https://example.com/page`
-        * `https://sub.example.com/page`
-        * **NSFW** `example.com`
-        * `192.168.0.0/16`
     validations:
       required: true
 
@@ -71,11 +63,6 @@ body:
         * `sub.example.org`
         * `https://example.org/page`
         * `https://sub.example.org/page`
-      value: |
-        * `example.org`
-        * `sub.example.org`
-        * `https://example.org/page`
-        * `https://sub.example.org/page`
     validations:
       required: true
 
@@ -85,9 +72,6 @@ body:
       label: Where or how did you discover this phishing?
       description: Please provide any information that may help us understand how you discovered or how you were targeted by this phishing.
       placeholder: |
-        I discovered this phishing by...
-        I was targeted by this phishing by...
-      value: |
         I discovered this phishing by...
         I was targeted by this phishing by...
     validations:
@@ -109,6 +93,8 @@ body:
         </details>
       value: |
         <details><summary>Screenshot</summary>
+
+
         </details>
     validations:
       required: false
@@ -123,8 +109,6 @@ body:
         One link per line.
       placeholder: |
         * https://sub.example.co.uk/page
-      value: |
-        * https://sub.example.co.uk/page
     validations:
       required: false
 
@@ -134,8 +118,6 @@ body:
       label: Additional Information or Context
       description: Is there anything else you'd like to add?
       placeholder: |
-        I have also noticed that...
-      value: |
         I have also noticed that...
     validations:
       required: false

@@ -1,6 +1,6 @@
 name: Bug Report
 description: Report a bug or issue.
-title: BUG | My Awesome Bug
+title: BUG | The Awful Bug
 labels:
   - bug
 projects:
@@ -12,21 +12,20 @@ body:
   - type: markdown
     attributes:
       value: |+
-        Thanks for taking the time to fill out this false positive report!
+        Thank you for reporting a bug.
 
-        We understand that this can be frustrating, confusing, embarrassing, time consuming, and even painful for many webmasters, developers, user and websites or services owners.
-        Please be patient and rest assured that we one of our team members will address your issue as soon as possible. Please be sure to provide as much information as possible to help us understand the issue.
+        We understand that encountering bugs can be frustrating and disruptive. Please be patient—one of our team members will review your report as soon as possible. Providing clear and detailed information will help us investigate and resolve the issue more efficiently.
 
-        All issues are welcome, but please be aware that:
-          - We are a small team and may not be able to respond immediately.
-          - We may ask for more information to help us understand the issue.
-          - Your issue may be moved to one of our other repositories for further investigation.
+        Please note:
+          - We are a small team and may not respond immediately.
+          - We may request additional information to better understand your report.
+          - Your issue may be moved to another repository for further investigation.
 
-        We appreciate your help in making the Phishing Database better!
+        Your feedback helps us improve the Phishing Database.
 
-        If you have a question or need help, please ask in our [Discussions](hhttps://github.com/Phishing-Database/dev-center/discussions) section.
+        If you have questions or need assistance, please visit our [Discussions](https://github.com/Phishing-Database/dev-center/discussions) section.
 
-        The Phishing Database Project Team.
+        — The Phishing Database Project Team
 
   - type: textarea
     id: problem
@@ -34,8 +33,6 @@ body:
       label: What is the problem you are experiencing?
       description: Please describe the problem you are experiencing.
       placeholder: |
-        I am experiencing a problem where...
-      value: |
         I am experiencing a problem where...
     validations:
       required: true
@@ -46,13 +43,6 @@ body:
       label: How can we reproduce the problem?
       description: Please describe how we can reproduce the problem.
       placeholder: |
-        To reproduce the problem:
-
-        1.
-        2.
-        3.
-        4.
-      value: |
         To reproduce the problem:
 
         1.
@@ -78,6 +68,8 @@ body:
         </details>
       value: |
         <details><summary>Screenshot</summary>
+
+
         </details>
     validations:
       required: false
@@ -89,8 +81,6 @@ body:
       description: Please describe what you expected to happen.
       placeholder: |
         I expected that...
-      value: |
-        I expected that...
     validations:
       required: true
 
@@ -101,8 +91,6 @@ body:
       description: Please describe if there is a workaround.
       placeholder: |
         I found a workaround...
-      value: |
-        I found a workaround...
     validations:
       required: false
 
@@ -112,8 +100,6 @@ body:
       label: Additional context
       description: Please provide any additional context related to the problem.
       placeholder: |
-        I would like to add...
-      value: |
         I would like to add...
     validations:
       required: false
