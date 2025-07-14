@@ -15,7 +15,7 @@ Join us in our mission to keep threat intelligence free and open-source by contr
 
 We're seeking sponsors to help us grow and strengthen our infrastructure. By sponsoring this project, you'll have the opportunity to showcase your logo and link here, gaining visibility and supporting an open-source initiative that benefits the community.
 
-Contact us via 📧 to explore partnership opportunities.
+Contact us via 📧 _(email)_ to explore partnership opportunities.
 
 ## 🔗 Download Data
 
@@ -44,11 +44,8 @@ _The files are updated regularly._
 
 ## Questions
 
-If you have a question or need help, please ask in our [Discussions](https://github.com/Phishing-Database/dev-center/discussions) section.
+If you have a question or need help, please ask in our [Discussions](https://github.com/Phishing-Database/Phishing.Database/discussions) section.
 
 ## Reporting
 
-To report a false positive, or phishing attempt, please use select the appropriate template through [this link](https://github.com/Phishing-Database/phishing/issues/new/choose).
-
-> [!tip]
-> We encourage you to also submit the domains or IP addresses to the [My Privacy DNS](https://github.com/mypdns/matrix) project as they try to keep track of why and when a domain was added to any blacklist.
+To report a false positive, or phishing attempt, please use select the appropriate template through [this link](https://github.com/Phishing-Database/Phishing.Database/issues/new/choose).
