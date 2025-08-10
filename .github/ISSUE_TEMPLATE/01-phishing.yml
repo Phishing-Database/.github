@@ -2,7 +2,7 @@ name: Phishing Report
 description: Create a phishing (or impersonation) report.
 title: "Phishing | example.com"
 labels:
-  - "false positive"
+  - phishing-report
 assignees:
   - funilrys
   - mitchellkrogza

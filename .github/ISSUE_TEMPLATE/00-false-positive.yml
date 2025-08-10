@@ -2,7 +2,8 @@ name: False Positive Report
 description: Create a report to suggest a false positive.
 title: "False Positive | example.com"
 labels:
-  - "false positive"
+  - false-positive-report
+  - bot:check-false-positive
 assignees:
   - funilrys
   - mitchellkrogza
