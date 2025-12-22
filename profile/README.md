@@ -4,48 +4,57 @@
 
 <img src="https://github.com/Phishing-Database/assets/raw/master/phishing-logo.jpg" alt="Phishing Domain Status Testing Repo"/>
 
-
 The **Phishing.Database** project is a comprehensive and regularly updated repository designed to help the community identify and mitigate phishing threats.
 
-We believe that threat intelligence on phishing, malware, and ransomware should always remain **free and open-source**. By openly sharing data about criminal activities, we aim to protect the internet users, help organizations mitigate threats, and contribute to a safer online environment for everyone by contributing to the global effort to identify and shutdown malicious sites. Unlike proprietary systems that sell access to phishing data, we focus and on transparency and collaboration for the greater good.
+We believe that threat intelligence on phishing, malware, and ransomware should always remain **free and open-source**. By openly sharing data about criminal activities, we aim to protect the internet users, help organizations mitigate threats, and contribute to a safer online environment for everyone by contributing to the global effort to identify and shutdown malicious sites. Unlike proprietary systems that sell access to phishing data, we focus on transparency and collaboration for the greater good.
 
 Join us in our mission to keep threat intelligence free and open-source by contributing to the project, sharing the data, and supporting the maintainers.
 
-## Sponsors
+---
 
-We're seeking sponsors to help us grow and strengthen our infrastructure. By sponsoring this project, you'll have the opportunity to showcase your logo and link here, gaining visibility and supporting an open-source initiative that benefits the community.
+## 👥 The Team
 
-Contact us via 📧 _(email)_ to explore partnership opportunities.
+The project is led by its founders and supported by a dedicated group of **Community Safekeepers** who ensure the integrity of our community-driven data.
 
-## 🔗 Download Data
+- **Mitchell Krog** ([@mitchellkrogza](https://github.com/mitchellkrogza))
+- **Nissar Chababy** ([@funilrys](https://github.com/funilrys))
+- **[Our Community Safekeepers](https://github.com/Phishing-Database/Phishing.Database#community-safekeepers)**
 
-The links below will direct you to the latest data files for this project.
+---
 
-The checksums for the files are available in the [checksums repository](https://github.com/Phishing-Database/checksums).
+## 📥 Download Data
 
-To avoid misunderstandings, the data files are hosted on `phish.co.za`, while the checksum files are hosted on GitHub (`raw.githubusercontent.com`).
+The links below provide direct access to our most popular feeds. To avoid misunderstandings, data files are hosted on `phish.co.za`, while verifiable checksums are hosted [on GitHub](https://github.com/Phishing-Database/checksums).
 
- | File Name                     | Official Source                                                      | Checksums                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
- | ----------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
- | ALL-phishing-domains.lst      | [Download](https://phish.co.za/latest/ALL-phishing-domains.lst)      | [md5](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-domains.lst.md5), [sha1](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-domains.lst.sha1), [sha256](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-domains.lst.sha256), [sha512](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-domains.lst.sha512)                     |
- | ALL-phishing-links.lst        | [Download](https://phish.co.za/latest/ALL-phishing-links.lst)        | [md5](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-links.lst.md5), [sha1](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-links.lst.sha1), [sha256](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-links.lst.sha256), [sha512](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-links.lst.sha512)                             |
- | ALL-phishing-domains.tar.gz   | [Download](https://phish.co.za/latest/ALL-phishing-domains.tar.gz)   | [md5](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-domains.tar.gz.md5), [sha1](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-domains.tar.gz.sha1), [sha256](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-domains.tar.gz.sha256), [sha512](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-domains.tar.gz.sha512)         |
- | ALL-phishing-links.tar.gz     | [Download](https://phish.co.za/latest/ALL-phishing-links.tar.gz)     | [md5](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-links.tar.gz.md5), [sha1](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-links.tar.gz.sha1), [sha256](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-links.tar.gz.sha256), [sha512](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-links.tar.gz.sha512)                 |
- | phishing-domains-ACTIVE.txt   | [Download](https://phish.co.za/latest/phishing-domains-ACTIVE.txt)   | [md5](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-domains-ACTIVE.txt.md5), [sha1](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-domains-ACTIVE.txt.sha1), [sha256](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-domains-ACTIVE.txt.sha256), [sha512](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-domains-ACTIVE.txt.sha512)         |
- | phishing-domains-INACTIVE.txt | [Download](https://phish.co.za/latest/phishing-domains-INACTIVE.txt) | [md5](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-domains-INACTIVE.txt.md5), [sha1](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-domains-INACTIVE.txt.sha1), [sha256](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-domains-INACTIVE.txt.sha256), [sha512](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-domains-INACTIVE.txt.sha512) |
- | phishing-domains-INVALID.txt  | [Download](https://phish.co.za/latest/phishing-domains-INVALID.txt)  | [md5](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-domains-INVALID.txt.md5), [sha1](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-domains-INVALID.txt.sha1), [sha256](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-domains-INVALID.txt.sha256), [sha512](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-domains-INVALID.txt.sha512)     |
- | phishing-IPs-ACTIVE.txt       | [Download](https://phish.co.za/latest/phishing-IPs-ACTIVE.txt)       | [md5](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-IPs-ACTIVE.txt.md5), [sha1](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-IPs-ACTIVE.txt.sha1), [sha256](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-IPs-ACTIVE.txt.sha256), [sha512](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-IPs-ACTIVE.txt.sha512)                         |
- | phishing-IPs-INACTIVE.txt     | [Download](https://phish.co.za/latest/phishing-IPs-INACTIVE.txt)     | [md5](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-IPs-INACTIVE.txt.md5), [sha1](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-IPs-INACTIVE.txt.sha1), [sha256](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-IPs-INACTIVE.txt.sha256), [sha512](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-IPs-INACTIVE.txt.sha512)                 |
- | phishing-IPs-INVALID.txt      | [Download](https://phish.co.za/latest/phishing-IPs-INVALID.txt)      | [md5](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-IPs-INVALID.txt.md5), [sha1](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-IPs-INVALID.txt.sha1), [sha256](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-IPs-INVALID.txt.sha256), [sha512](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-IPs-INVALID.txt.sha512)                     |
- | phishing-links-ACTIVE.txt     | [Download](https://phish.co.za/latest/phishing-links-ACTIVE.txt)     | [md5](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-links-ACTIVE.txt.md5), [sha1](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-links-ACTIVE.txt.sha1), [sha256](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-links-ACTIVE.txt.sha256), [sha512](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-links-ACTIVE.txt.sha512)                 |
- | phishing-links-INACTIVE.txt   | [Download](https://phish.co.za/latest/phishing-links-INACTIVE.txt)   | [md5](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-links-INACTIVE.txt.md5), [sha1](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-links-INACTIVE.txt.sha1), [sha256](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-links-INACTIVE.txt.sha256), [sha512](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-links-INACTIVE.txt.sha512)         |
+| File Name                   | Official Source                                                    | Checksums                                                                                                                                                                                                                                              |
+| --------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ALL-phishing-domains.lst    | [Download](https://phish.co.za/latest/ALL-phishing-domains.lst)    | [md5](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-domains.lst.md5) \| [sha256](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-domains.lst.sha256)       |
+| ALL-phishing-links.lst      | [Download](https://phish.co.za/latest/ALL-phishing-links.lst)      | [md5](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-links.lst.md5) \| [sha256](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/ALL-phishing-links.lst.sha256)           |
+| phishing-domains-ACTIVE.txt | [Download](https://phish.co.za/latest/phishing-domains-ACTIVE.txt) | [md5](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-domains-ACTIVE.txt.md5) \| [sha256](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-domains-ACTIVE.txt.sha256) |
+| phishing-IPs-ACTIVE.txt     | [Download](https://phish.co.za/latest/phishing-IPs-ACTIVE.txt)     | [md5](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-IPs-ACTIVE.txt.md5) \| [sha256](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-IPs-ACTIVE.txt.sha256)         |
+| phishing-links-ACTIVE.txt   | [Download](https://phish.co.za/latest/phishing-links-ACTIVE.txt)   | [md5](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-links-ACTIVE.txt.md5) \| [sha256](https://raw.githubusercontent.com/Phishing-Database/checksums/refs/heads/master/phishing-links-ACTIVE.txt.sha256)     |
 
-_The files are updated regularly._
+> [!TIP]
+> This is a summary of our most popular feeds. For a full list please visit our main **[Phishing.Database](https://github.com/Phishing-Database/Phishing.Database#file-sources)** repository.
 
-## Questions
+---
 
-If you have a question or need help, please ask in our [Discussions](https://github.com/Phishing-Database/Phishing.Database/discussions) section.
+## 💖 Support & Sustainability
 
-## Reporting
+Phishing.Database is an independent, community-driven project maintained and operated in our spare time by the founders and a core group of community Safekeepers.
+To keep our infrastructure thriving and our feeds free for everyone, we rely on the support of our community and sponsors.
 
-To report a false positive, or phishing attempt, please use select the appropriate template through [this link](https://github.com/Phishing-Database/Phishing.Database/issues/new/choose).
+<p align="left">
+  <a href="https://ko-fi.com/mitchellkrog" target="_blank"><img src="https://img.shields.io/badge/Support%20@mitchellkrogza-Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Support @mitchellkrogza on Ko-fi"></a>
+  <a href="https://github.com/sponsors/funilrys" target="_blank"><img src="https://img.shields.io/badge/Sponsor%20@funilrys-GitHub%20Sponsors-EA4AAA?style=for-the-badge&logo=github-sponsors&logoColor=white" alt="Sponsor @funilrys on GitHub"></a>
+</p>
+
+- 📧 **Inquiries:** [contact@phish.co.za](mailto:contact@phish.co.za)
+
+---
+
+## 🧭 Navigation
+
+- 🛡️ **[Participate](https://github.com/Phishing-Database/phishing)**: Help us keep everyone safe by directly contributing to the project's efforts.
+- 🐛 **[Report](https://github.com/Phishing-Database/Phishing.Database/issues/new/choose):** Submit false positives or new phishing attempts.
+- 💬 **[Discuss](https://github.com/Phishing-Database/Phishing.Database/discussions):** Ask questions or seek help.
