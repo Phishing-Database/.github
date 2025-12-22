@@ -1,0 +1,94 @@
+name: New Adopter / Showcase
+description: Share your organization, project, or article that features Phishing.Database.
+title: "SHOWCASE | [Project/Org Name]"
+labels:
+  - enhancement
+  - documentation
+assignees:
+  - funilrys
+  - mitchellkrogza
+body:
+  - type: markdown
+    attributes:
+      value: |+
+        ### Thank you for sharing your journey with us!
+
+        Whether you are a global **organization**, a security vendor, or an individual researcher, we are thrilled to have you as part of our community. Sharing your use case helps demonstrate the real-world impact of open-source threat intelligence.
+
+        **What we do with this info:**
+        - Our team will review your submission.
+        - Approved projects, logos, and articles will be added to the "Integrations & Community" section of our README.
+        - We may reach out if we need a specific logo format for high-resolution displays.
+
+        — The Phishing.Database Project Team
+
+  - type: input
+    id: org_name
+    attributes:
+      label: Organization or Project Name
+      description: The name you would like displayed in the showcase.
+      placeholder: "e.g., Global Security Corp / MyOpenSourceTool"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: user_type
+    attributes:
+      label: Entity Type
+      description: This helps us categorize our community reach.
+      options:
+        - Organization / Company
+        - Security Vendor
+        - Research / Academic Institution
+        - Independent Developer / Researcher
+        - Personal Project / Home Lab
+    validations:
+      required: true
+
+  - type: input
+    id: project_url
+    attributes:
+      label: Official Website / Project URL
+      description: The link we should use when someone clicks on your logo or name.
+      placeholder: "https://www.example.com"
+    validations:
+      required: true
+
+  - type: textarea
+    id: usage_context
+    attributes:
+      label: How are you using the project?
+      description: Briefly describe how you use Phishing.Database (e.g., "Internal SOC alerting", "Feeding our scan engine", "Education & Awareness").
+      placeholder: "We integrate the ACTIVE link feeds into our..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: logo_assets
+    attributes:
+      label: Logo & Brand Assets
+      description: |
+        Please provide a link to your logo (SVG or high-res PNG preferred) or drag-and-drop the image here.
+      placeholder: "Link to logo or drop image here..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: mentions
+    attributes:
+      label: Did you write about us?
+      description: |
+        If you have published a blog post, research paper, or article featuring Phishing.Database, please share the link!
+        We would love to showcase your work and share it with our community.
+      placeholder: "e.g., https://example.com/how-we-use-phishing-database"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Additional Context
+      description: Any other details or social media handles you'd like us to mention?
+      placeholder: "I'd also like to mention..."
+    validations:
+      required: false
